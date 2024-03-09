@@ -1,0 +1,37 @@
+Node.js User Management App
+This is a simple Node.js application for managing users. It allows users to add new users via a form, view a list of existing users, and display a welcome message.
+
+Features
+Display a welcome message on the home page
+Add new users via a form
+Store user information in a text file
+View a list of existing users
+Redirect to the create user form if no users exist
+
+##Requirements - install Nodejs - install nodemon - install express - install body-parser
+
+## Installation
+
+1. Clone the repository:
+   https://github.com/prabha2612/Node_assign2.git
+
+2. Navigate to the project directory:
+   cd ASSIGN2
+
+3. Install dependencies:
+   npm install
+
+## Usage
+
+1. Start the server:
+   node app.js
+
+2. Open a web browser and navigate to `http://localhost:3000`.
+
+3. You can now create users by visiting `/create` and listing users by visiting `/users`.
+
+## File Structure
+
+- `app.js`: Main entry point of the application.
+- `routes.js`: Contains request handling logic. Defines routes for creating users, adding users, and listing users.
+- `users.txt`: Text file to store user data.

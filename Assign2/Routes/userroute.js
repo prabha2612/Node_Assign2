@@ -36,7 +36,7 @@ routes.get('/users', (req, res) => {
             // Split the data into an array of usernames and filter out any empty strings
             const users = data.split('\n').filter(Boolean);
             // Display the list of users as an HTML unordered list
-            res.send(`<h2>Users:</h2><ul>${users.map(userName => `<li>${userName}</li>`).join('')}</ul>`);
+            res.send(`<ul>${users.map(userName => `<li>${userName}</li>`).join('')}</ul>`);
         }
     });
 });
